@@ -1,6 +1,5 @@
-# A github Action file that which build and add(push to repo) the .apk files that are in output folder after build. This uses gradlew command line tool!
 name: Android Builder
-
+description: "Build App and push to your repo using github Actions!"
 on: [push]
 
 jobs:
