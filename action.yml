@@ -19,9 +19,9 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         java-version: 1.8
     - name: "Permission to gradle File"
-      run: chmod +x gradlew
+      run: chmod +x gradle
     - name: Build with Gradle
-      run: ./gradlew assemble
+      run: ./gradle assemble
     - name: Commit files
       run: |
         echo ${{ github.ref }}
